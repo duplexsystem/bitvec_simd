@@ -17,12 +17,12 @@ categories = ["data-structures"]
 
 [features]
 default = ["std"]
-use_serde = ["serde"]
+use_serde = ["serde", "smallvec/serde"]
 std = []
 
 [dependencies]
 wide = "0.7"
-smallvec = { version = "1.8", features = [ "const_generics", "serde" ] }
+smallvec = { version = "1.8", features = [ "const_generics" ] }
 serde = { version = "1.0", features = ["derive"], optional = true }
 
 [dev-dependencies]
